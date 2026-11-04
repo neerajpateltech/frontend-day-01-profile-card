@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8eef7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.profile-card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.theme-btn {
+    display: block;
+    margin-left: auto;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    margin: 25px auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.role {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.skills span {
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.contact-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contact-btn:hover {
+    background: #1d4ed8;
+}
+
+#message {
+    margin-top: 15px;
+    color: #2563eb;
+}
+
+/* Dark Theme */
+
+body.dark {
+    background: #0f172a;
+}
+
+body.dark .profile-card {
+    background: #1e293b;
+}
+
+body.dark h1,
+body.dark h2 {
+    color: white;
+}
+
+body.dark .description {
+    color: #cbd5e1;
+}
